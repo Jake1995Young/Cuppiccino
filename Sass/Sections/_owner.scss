@@ -1,0 +1,145 @@
+/*********************************/
+/* Section - Owner */
+/*********************************/
+.Owner {
+    position: relative;
+    top: 0vh;
+    height: 106vh;
+    width: 100%;
+    background-color: $Cream-Green;
+    background: linear-gradient($Slate-Green, rgba($Medium-Green, 0.8)), url(/Imgs/Macaroons&Coffee.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.OwnerCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . . . . . . . . . . . . . . . . ."
+        ". . . Photo Photo Photo Photo Photo . Name Name Name Name Name Name Name Name Name . . ."
+        ". . . Photo Photo Photo Photo Photo . Pos Pos Pos Pos Pos Pos Pos Pos Pos . . ."
+        ". . . Photo Photo Photo Photo Photo . Desc Desc Desc Desc Desc Desc Desc Desc Desc . . ."
+        ". . . Photo Photo Photo Photo Photo . Desc Desc Desc Desc Desc Desc Desc Desc Desc . . ."
+        ". . . Photo Photo Photo Photo Photo . Desc Desc Desc Desc Desc Desc Desc Desc Desc . . ."
+        ". . . . . . . . . . . . . . . . . . . . .";
+    height: 50%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    box-shadow:
+        0px 20px 55px $Black,
+        0px -12px 30px $Black,
+        0px 4px 6px $Black;
+    transform: translate(-50%, -50%);
+}
+
+.OwnerCardBack {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: $Cream-Green;
+    transform: translate(-50%, -50%);
+}
+
+.OwnerCardFront {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    clip-path: polygon(0 0, 15% 0, 30% 100%, 0 100%);
+    background-color: $Orange;
+    transform: translate(-50%, -50%);
+}
+
+#OwnerPhoto {
+    z-index: 3;
+    grid-area: Photo;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    transform: translateX(-50%);
+    border-radius: 25%;
+}
+
+.Name {
+    z-index: 3;
+    grid-area: Name;
+    font-family: sans-serif;
+    font-size: 5vh;
+    text-align: center;
+    color: $Slate-Green;
+    text-align: left;
+    text-shadow: 3px 2px 0px $Orange;
+}
+
+.Position {
+    z-index: 3;
+    grid-area: Pos;
+    font-family: sans-serif;
+    font-size: 5vh;
+    text-align: center;
+    color: $Slate-Green;
+    text-align: left;
+}
+
+.Info {
+    z-index: 3;
+    grid-area: Desc;
+    font-family: sans-serif;
+    font-size: 2vh;
+    text-align: left;
+    color: $Slate-Green;
+}
+
+.Socials {
+    position: absolute;
+    width: 70%;
+    height: 7%;
+    top: 75%;
+    left: 50%;
+    z-index: -3;
+
+    background-color: $Slate-Green;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgba($Orange, 0.6) 0px 5px 50px;
+    transform: translateX(-50%);
+}
+
+.SocialsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    left: 50%;
+    transform: translateX(-25%);
+    
+}
+
+#icon {
+    display: block;
+    float: left;
+    font-size: 4vh;
+    top: 2vh;
+
+    padding-top: 2vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    color: $Orange;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+#icon:hover {
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}

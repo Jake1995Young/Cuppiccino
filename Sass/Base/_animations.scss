@@ -1,0 +1,99 @@
+/**
+ * ----------------------------------------
+ *             Animations
+ * ----------------------------------------
+ */
+/*Shrink down and up*/
+@-webkit-keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+}
+
+@keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*text-shadow-drop-center*/
+@-webkit-keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 $Black;
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba($Cream, 0.85);
+    }
+}
+
+@keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 rgba($Black, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba($Cream, 0.85);
+    }
+}
+
+/*text-blur-out*/
+@-webkit-keyframes text-blur-out {
+    0% {
+        -webkit-filter: blur(0.01);
+        filter: blur(0.01);
+    }
+
+    100% {
+        -webkit-filter: blur(12px) opacity(0%);
+        filter: blur(12px) opacity(0%);
+    }
+}
+
+@keyframes text-blur-out {
+    0% {
+        -webkit-filter: blur(0.01);
+        filter: blur(0.01);
+    }
+
+    100% {
+        -webkit-filter: blur(12px) opacity(0%);
+        filter: blur(12px) opacity(0%);
+    }
+}
