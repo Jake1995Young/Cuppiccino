@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*********************************/
 /* Colours */
 /*********************************/
@@ -605,3 +606,612 @@ li {
 
 
 
+=======
+/*********************************/
+/* Colours */
+/*********************************/
+/*
+Brown rgb(98, 70, 50) #624632
+Navy rgb(3, 32, 54) #032036
+Grey Shadow rgb(47, 0, 0)
+
+Orange #e89620
+Dark purple  #38171f
+
+Slate Green #555c55
+Cream Green #F1FAEE
+Dark Green #1f2c17
+Medium Green #859a5b
+*/
+/*********************************/
+/* Basic Setup */
+/*********************************/
+@font-face {
+  font-family: Chalk;
+  src: url(/Sites/Cuppiccino/Fonts/ChalkFont.otf); }
+
+@font-face {
+  font-family: LemonJelly;
+  src: url(/Sites/Cuppiccino/Fonts/LemonJellyFont.ttf); }
+
+@font-face {
+  font-family: Gothic;
+  src: url(/Sites/Cuppiccino/Fonts/GothicFont.ttf); }
+
+@font-face {
+  font-family: IndieFlower;
+  src: url(/Sites/Cuppiccino/Fonts/IndieFlower.ttf); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  background-color: #F1FAEE;
+  /* Allows to smotthly move from one section to the next*/
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+/**
+ * ----------------------------------------
+ *             Animations
+ * ----------------------------------------
+ */
+/*Shrink down and up*/
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); } }
+
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); } }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+/*text-shadow-drop-center*/
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 #000000; }
+  100% {
+    text-shadow: 0 0 18px rgba(255, 244, 194, 0.85); } }
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    text-shadow: 0 0 18px rgba(255, 244, 194, 0.85); } }
+
+/*text-blur-out*/
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%); } }
+
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%); } }
+
+/*********************************/
+/* Section - Coffee List  */
+/*********************************/
+.CoffeeMenuPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .3fr 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas: ". . . Title Title Title Title . . ."
+ ". . . . . . . . . ."
+ ". CoffeeList1 CoffeeList1 . CoffeeList2 CoffeeList2 . CoffeeList3 CoffeeList3 ."
+ ". CoffeeList1 CoffeeList1 . CoffeeList2 CoffeeList2 . CoffeeList3 CoffeeList3 ."
+ ". . . . . . . . . .";
+  font-family: "Chalk";
+  font-size: 8vh;
+  background-image: linear-gradient(135deg, #4CAF50 0%, #f1faee 95%); }
+
+.Title {
+  grid-area: Title;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  top: 10%;
+  font: 400 2em 'Oleo Script', Helvetica, sans-serif;
+  color: #555c55;
+  text-shadow: 10px 0px 0px rgba(47, 0, 0, 0.3);
+  left: 50%; }
+
+.CoffeeList1 {
+  grid-area: CoffeeList1; }
+
+.CoffeeList2 {
+  grid-area: CoffeeList2; }
+
+.CoffeeList3 {
+  grid-area: CoffeeList3; }
+
+li {
+  list-style-image: url(/Sites/Cuppiccino/Imgs/coffee.svg);
+  filter: invert(67%) sepia(87%) saturate(974%) hue-rotate(343deg) brightness(43%) contrast(95%);
+  font-size: 8vh; }
+
+.btn {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  text-decoration: none; }
+
+/* Section Dividers - Coffee List */
+.CircleSection {
+  position: relative;
+  height: 100vh;
+  background: #555c55; }
+
+.BtnDivider {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2%;
+  width: 3%;
+  height: 5%;
+  color: #032036;
+  border-radius: 50%;
+  background: #e89620;
+  border: 5px solid #555c55; }
+
+.BtnDivider:hover {
+  transform: scale(0.75);
+  transform: translate(-50%);
+  transition: .2s;
+  background: #555c55;
+  color: #e89620;
+  border: 10px solid #e89620; }
+
+/*********************************/
+/* Section - Coffee List Popup */
+/*********************************/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0; }
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2; }
+
+.popup {
+  left: 50%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas: ". . . . . . . . . ."
+ ". PopupTitle PopupTitle PopupTitle .PopupClip PopupClip PopupClip PopupClip."
+ ". . . .  . PopupClip PopupClip PopupClip PopupClip."
+ "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
+ "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
+ "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
+ "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
+ "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo . . . . .";
+  background-image: url(/Sites/Cuppiccino/Imgs/PinkGradient.png);
+  border-radius: 1%;
+  background-size: cover;
+  transform: translateX(-50%);
+  transition: all .5s ease-in-out; }
+
+.popup .close {
+  position: absolute;
+  right: 2%;
+  transition: all .5s;
+  font-size: 5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #624632; }
+
+.PopupTitle {
+  grid-area: PopupTitle;
+  font-family: "LemonJelly";
+  font-size: 11em;
+  font-weight: 100;
+  color: #032036;
+  text-shadow: 4px 4px 0px rgba(47, 0, 0, 0.3);
+  text-align: center; }
+
+.PopupClip {
+  grid-area: PopupClip; }
+
+.PopupInfo {
+  grid-area: PopupInfo;
+  width: 100%;
+  height: 100%;
+  font-family: "Gothic";
+  font-size: 6em;
+  overflow: hidden;
+  text-align: center;
+  color: #38171f; }
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%; }
+  .popup {
+    width: 70%; } }
+
+.btn:hover {
+  -webkit-animation: text-shadow-drop-center 0.6s both;
+  animation: text-shadow-drop-center 0.6s both; }
+
+.btn:hover {
+  transition: .5s;
+  -webkit-animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+/*********************************/
+/* Landing */
+/*********************************/
+.background_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100em;
+  opacity: .4; }
+
+.container {
+  width: 60%;
+  height: 70em;
+  margin: 5% auto; }
+
+.gallery {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(20, 1vw);
+  grid-gap: 1.5em; }
+
+.gallery__media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 25px; }
+
+.gallery__item--1 {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 10; }
+
+.gallery__item--2 {
+  grid-column-start: 10;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 7; }
+
+.gallery__item--3 {
+  grid-column-start: 17;
+  grid-column-end: 23;
+  grid-row-start: 2;
+  grid-row-end: 10; }
+
+.gallery__item--4 {
+  grid-column-start: 8;
+  grid-column-end: 18;
+  grid-row-start: 6;
+  grid-row-end: 14;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+.gallery__item--4-5 {
+  grid-column-start: 8;
+  grid-column-end: 18;
+  grid-row-start: 6;
+  grid-row-end: 14;
+  z-index: -1;
+  opacity: 0; }
+
+.gallery__item---5 {
+  grid-column-start: 8;
+  grid-column-end: 18;
+  grid-row-start: 6;
+  grid-row-end: 14; }
+
+.gallery__item--4:hover {
+  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 14;
+  grid-row-end: 20; }
+
+.gallery__item--6 {
+  grid-column-start: 11;
+  grid-column-end: 19;
+  grid-row-start: 16;
+  grid-row-end: 22; }
+
+.gallery__item--7 {
+  grid-column-start: 20;
+  grid-column-end: 27;
+  grid-row-start: 12;
+  grid-row-end: 19; }
+
+/*********************************/
+/* Section - Owner */
+/*********************************/
+.Owner {
+  position: relative;
+  top: 0vh;
+  height: 106vh;
+  width: 100%;
+  background-color: #F1FAEE;
+  background: linear-gradient(#555c55, rgba(76, 175, 80, 0.8)), url(/Sites/Cuppiccino/Imgs/Macaroons&Coffee.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
+
+.OwnerCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . . . . . . . . . . . . . . . . . . . ."
+ ". . . Photo Photo Photo Photo Photo . Name Name Name Name Name Name Name Name Name . . ."
+ ". . . Photo Photo Photo Photo Photo . Pos Pos Pos Pos Pos Pos Pos Pos Pos . . ."
+ ". . . Photo Photo Photo Photo Photo . Desc Desc Desc Desc Desc Desc Desc Desc Desc . . ."
+ ". . . Photo Photo Photo Photo Photo . Desc Desc Desc Desc Desc Desc Desc Desc Desc . . ."
+ ". . . Photo Photo Photo Photo Photo . Desc Desc Desc Desc Desc Desc Desc Desc Desc . . ."
+ ". . . . . . . . . . . . . . . . . . . . .";
+  height: 50%;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  box-shadow: 0px 20px 55px #000000, 0px -12px 30px #000000, 0px 4px 6px #000000;
+  transform: translate(-50%, -50%); }
+
+.OwnerCardBack {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  background-color: #F1FAEE;
+  transform: translate(-50%, -50%); }
+
+.OwnerCardFront {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  clip-path: polygon(0 0, 15% 0, 30% 100%, 0 100%);
+  background-color: #e89620;
+  transform: translate(-50%, -50%); }
+
+#OwnerPhoto {
+  z-index: 3;
+  grid-area: Photo;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  transform: translateX(-50%);
+  border-radius: 25%; }
+
+.Name {
+  z-index: 3;
+  grid-area: Name;
+  font-family: sans-serif;
+  font-size: 5vh;
+  text-align: center;
+  color: #555c55;
+  text-align: left;
+  text-shadow: 3px 2px 0px #e89620; }
+
+.Position {
+  z-index: 3;
+  grid-area: Pos;
+  font-family: sans-serif;
+  font-size: 5vh;
+  text-align: center;
+  color: #555c55;
+  text-align: left; }
+
+.Info {
+  z-index: 3;
+  grid-area: Desc;
+  font-family: sans-serif;
+  font-size: 2vh;
+  text-align: left;
+  color: #555c55; }
+
+.Socials {
+  position: absolute;
+  width: 70%;
+  height: 7%;
+  top: 75%;
+  left: 50%;
+  z-index: -3;
+  background-color: #555c55;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(232, 150, 32, 0.6) 0px 5px 50px;
+  transform: translateX(-50%); }
+
+.SocialsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: 50%;
+  transform: translateX(-25%); }
+
+#icon {
+  display: block;
+  float: left;
+  font-size: 4vh;
+  top: 2vh;
+  padding-top: 2vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  color: #e89620;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+#icon:hover {
+  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+/*********************************/
+/* Section - Specials */
+/*********************************/
+.Special {
+  position: relative;
+  top: -3vh;
+  left: 0%;
+  height: 100vh;
+  width: 100%; }
+
+.CloudContainer {
+  position: relative;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 10px; }
+
+#clouds {
+  z-index: 2;
+  left: 0%;
+  width: 100%;
+  position: absolute;
+  fill: #F1FAEE;
+  stroke: #F1FAEE; }
+
+.CurverSeperater {
+  position: relative;
+  top: -6vh;
+  left: 0%;
+  width: 100%;
+  z-index: 1; }
+
+#curveUpColor {
+  fill: #555c55; }
+
+.Main {
+  position: relative;
+  top: -3vh;
+  height: 100vh;
+  background: none;
+  width: 100%;
+  padding: 7% 20% 10% 20%;
+  background: #F1FAEE; }
+
+.BGBlock {
+  position: absolute;
+  width: 35%;
+  height: 80%;
+  top: 10%;
+  left: 50%;
+  background-color: #e89620;
+  transform: translateX(-50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px; }
+
+.Spec {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: 10%;
+  background: #fff;
+  box-shadow: inset 0px 0px 5px 15px #e3e3db;
+  border-radius: 20px; }
+
+#SpecialImage {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  top: 20%;
+  left: 70%;
+  object-fit: cover;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  box-shadow: -4px 4px 29px -4px #e7a61a; }
+
+.SpecSign {
+  margin-top: 2vh;
+  font-family: "IndieFlower";
+  font-size: 5vh;
+  text-align: center;
+  color: #1f2c17; }
+
+.SpecTitle {
+  font-family: "IndieFlower";
+  font-size: 5vh;
+  font-weight: 00;
+  text-align: center;
+  color: #859a5b; }
+
+.SpecInfo {
+  font-family: sans-serif;
+  font-size: 2vh;
+  text-align: center;
+  color: #555c55; }
+
+
+/*Responsive Web Design - Max 1800px*/
+.CoffeeMenuPage {
+    @media only screen and (max-width: 1800px) {
+        grid-template-rows: 1fr .3fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+>>>>>>> 26e8bb1d96259b5665f14fa51f0c471d9cbeca1c
