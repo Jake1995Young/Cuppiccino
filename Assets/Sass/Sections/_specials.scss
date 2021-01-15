@@ -1,0 +1,108 @@
+/*********************************/
+/* Section - Specials */
+/*********************************/
+.Special {
+    position: relative;
+    top: -3vh;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+}
+
+.CloudContainer {
+    position: relative;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 10px;
+}
+
+#clouds {
+    z-index: 2;
+    left: 0%;
+    width: 100%;
+    position: absolute;
+    fill: $Cream-Green;
+    stroke: $Cream-Green;
+}
+
+.CurverSeperater {
+    position: relative;
+    top: -6vh;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+#curveUpColor {
+    fill: $Slate-Green;
+}
+
+.Main {
+    position: relative;
+    top: -3vh;
+    height: 100vh;
+    background: none;
+    width: 100%;
+    padding: 7% 20% 10% 20%;
+    background: $Cream-Green;
+}
+
+.BGBlock {
+    position: absolute;
+    width: 35%;
+    height: 80%;
+    top: 10%;
+    left: 50%;
+    background-color: $Orange;
+    transform: translateX(-50%);
+    box-shadow: rgba($Black, 0.25) 0px 54px 55px, rgba($Black, 0.12) 0px -12px 30px, rgba($Black, 0.12) 0px 4px 6px;
+}
+
+.Spec {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 10%;
+    background: #fff;
+    box-shadow: inset 0px 0px 5px 15px #e3e3db;
+    border-radius: 20px;
+}
+
+#SpecialImage {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    top: 20%;
+    left: 70%;
+    object-fit: cover;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: -4px 4px 29px -4px #e7a61a;
+}
+
+.SpecSign {
+    margin-top: 2vh;
+    
+    font-family: "IndieFlower";
+    font-size: 5vh;
+    text-align: center;
+    color: $Dark-Green;
+}
+
+.SpecTitle {
+    font-family: "IndieFlower";
+    font-size: 5vh;
+    font-weight: 00;
+    text-align: center;
+    color: $Light-Green;
+}
+
+.SpecInfo {
+    font-family: sans-serif;
+    font-size: 2vh;
+    text-align: center;
+    color: $Slate-Green;
+}
