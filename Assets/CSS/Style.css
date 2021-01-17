@@ -20,19 +20,19 @@ Medium Green #859a5b
 /*********************************/
 @font-face {
   font-family: Chalk;
-  src: url(/Sites/Cuppiccino/Fonts/ChalkFont.otf); }
+  src: url(/Cuppiccino/Assets/Fonts/ChalkFont.otf); }
 
 @font-face {
   font-family: LemonJelly;
-  src: url(/Sites/Cuppiccino/Fonts/LemonJellyFont.ttf); }
+  src: url(/Cuppiccino/Assets/Fonts/LemonJellyFont.ttf); }
 
 @font-face {
   font-family: Gothic;
-  src: url(/Sites/Cuppiccino/Fonts/GothicFont.ttf); }
+  src: url(/Cuppiccino/Assets/Fonts/GothicFont.ttf); }
 
 @font-face {
   font-family: IndieFlower;
-  src: url(/Sites/Cuppiccino/Fonts/IndieFlower.ttf); }
+  src: url(/Cuppiccino/Assets/Fonts/IndieFlower.ttf); }
 
 *,
 *::after,
@@ -154,7 +154,7 @@ html {
   grid-area: CoffeeList3; }
 
 li {
-  list-style-image: url(/Sites/Cuppiccino/Imgs/coffee.svg);
+  list-style-image: url(/Cuppiccino/Assets/Imgs/coffee.svg);
   filter: invert(67%) sepia(87%) saturate(974%) hue-rotate(343deg) brightness(43%) contrast(95%);
   font-size: 8vh; }
 
@@ -227,7 +227,7 @@ li {
  "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
  "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
  "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo . . . . .";
-  background-image: url(/Sites/Cuppiccino/Imgs/PinkGradient.png);
+  background-image: url(/Cuppiccino/Assets/Imgs/PinkGradient.png);
   border-radius: 1%;
   background-size: cover;
   transform: translateX(-50%);
@@ -380,7 +380,7 @@ li {
   height: 106vh;
   width: 100%;
   background-color: #F1FAEE;
-  background: linear-gradient(#555c55, rgba(76, 175, 80, 0.8)), url(/Sites/Cuppiccino/Imgs/Macaroons&Coffee.jpg);
+  background: linear-gradient(#555c55, rgba(76, 175, 80, 0.8)), url(/Cuppiccino/Assets/Imgs/Macaroons&Coffee.jpg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
 
@@ -628,19 +628,19 @@ Medium Green #859a5b
 /*********************************/
 @font-face {
   font-family: Chalk;
-  src: url(/Sites/Cuppiccino/Fonts/ChalkFont.otf); }
+  src: url(/Cuppiccino/Assets/Fonts/ChalkFont.otf); }
 
 @font-face {
   font-family: LemonJelly;
-  src: url(/Sites/Cuppiccino/Fonts/LemonJellyFont.ttf); }
+  src: url(/Cuppiccino/Assets/Fonts/LemonJellyFont.ttf); }
 
 @font-face {
   font-family: Gothic;
-  src: url(/Sites/Cuppiccino/Fonts/GothicFont.ttf); }
+  src: url(/Cuppiccino/Assets/Fonts/GothicFont.ttf); }
 
 @font-face {
   font-family: IndieFlower;
-  src: url(/Sites/Cuppiccino/Fonts/IndieFlower.ttf); }
+  src: url(/Cuppiccino/Assets/Fonts/IndieFlower.ttf); }
 
 *,
 *::after,
@@ -762,7 +762,7 @@ html {
   grid-area: CoffeeList3; }
 
 li {
-  list-style-image: url(/Sites/Cuppiccino/Imgs/coffee.svg);
+  list-style-image: url(/Cuppiccino/Assets/Imgs/coffee.svg);
   filter: invert(67%) sepia(87%) saturate(974%) hue-rotate(343deg) brightness(43%) contrast(95%);
   font-size: 8vh; }
 
@@ -835,7 +835,7 @@ li {
  "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
  "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo PopupClip PopupClip PopupClip PopupClip ."
  "PopupInfo PopupInfo PopupInfo PopupInfo PopupInfo . . . . .";
-  background-image: url(/Sites/Cuppiccino/Imgs/PinkGradient.png);
+  background-image: url(/Cuppiccino/Assets/Imgs/PinkGradient.png);
   border-radius: 1%;
   background-size: cover;
   transform: translateX(-50%);
@@ -988,7 +988,7 @@ li {
   height: 106vh;
   width: 100%;
   background-color: #F1FAEE;
-  background: linear-gradient(#555c55, rgba(76, 175, 80, 0.8)), url(/Sites/Cuppiccino/Imgs/Macaroons&Coffee.jpg);
+  background: linear-gradient(#555c55, rgba(76, 175, 80, 0.8)), url(/Cuppiccino/Assets/Imgs/Macaroons&Coffee.jpg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
 
